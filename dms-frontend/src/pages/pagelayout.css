@@ -1,0 +1,121 @@
+/* styles.css */
+
+/* Layout Classes */
+.page-layout {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .page-background {
+    background: linear-gradient(45deg, #121212 30%, #2C3E50 90%);
+  }
+  
+  /* Header Classes */
+  .header {
+    z-index: 1201 !important;
+  }
+  
+  .header-bar {
+    background-color: #1f2937 !important;
+  }
+  
+  .header-menu-btn {
+    margin-right: 16px !important;
+  }
+  
+  .header-title {
+    flex-grow: 1;
+  }
+  
+  .header-user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  /* Drawer Classes */
+  .drawer {
+    width: 240px;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+  
+  .drawer--expanded {
+    width: 240px;
+    transition: width 225ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+  }
+  
+  .drawer--collapsed {
+    width: 64px;
+    transition: width 225ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+  }
+  
+  .drawer__paper {
+    background-color: #1f2937 !important;
+    color: white !important;
+    overflow-x: hidden;
+    border-right: none !important;
+  }
+  
+  .drawer__header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 8px;
+    min-height: 64px;
+  }
+  
+  /* Menu Classes */
+  .menu-item {
+    margin: 4px 8px !important;
+    border-radius: 4px !important;
+    color: white !important;
+  }
+  
+  .menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+  }
+  
+  .menu-icon {
+    color: white !important;
+    min-width: 48px !important;
+  }
+  
+  .menu-text--hidden {
+    opacity: 0;
+    transition: opacity 200ms;
+  }
+  
+  /* Content Classes */
+  .main-content {
+    flex-grow: 1;
+    padding: 24px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content-spacer {
+    min-height: 64px;
+  }
+  
+  .content-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 24px;
+    flex-grow: 1;
+    margin-bottom: 64px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer Classes */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    z-index: 1200;
+  }

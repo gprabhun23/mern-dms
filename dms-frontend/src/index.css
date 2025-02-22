@@ -1,0 +1,4 @@
+/* Remove horizontal and vertical scrollbars */
+body {
+  background: linear-gradient(45deg, #121212 30%, #2C3E50 90%);
+}
